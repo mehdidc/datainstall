@@ -1,0 +1,7 @@
+[global]
+device = cpu
+floatX = float32
+cast_policy = numpy+floatX
+
+[blas]
+ldflags = -lopenblas

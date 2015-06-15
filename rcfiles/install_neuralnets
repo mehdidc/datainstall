@@ -1,0 +1,17 @@
+#!/bin/sh
+
+install_openblas() {
+    conda install -y -c https://conda.binstar.org/jakirkham openblas
+}
+
+pip install -U --no-deps git+git://github.com/Theano/Theano.git
+install_openblas # for theano
+
+# nolearn + lasagne
+pip install git+https://github.com/Lasagne/Lasagne
+pip install nolearn
+
+# easy.py lasagne
+FOLDER=$(dirname $(which python))/../lib/python2.7/site-packages/lasagne
+echo $FOLDER
+wget https://raw.githubusercontent.com/mehdidc/Lasagne/master/lasagne/easy.py --output-document=$FOLDER/easy.py
