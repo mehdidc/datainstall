@@ -1,5 +1,6 @@
-apt update
+apt-get update
 apt-get dist-upgrade -y
+apt-get update
 apt-get install -y git
 apt-get install -y htop
 apt-get install -y mc 
