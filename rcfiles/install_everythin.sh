@@ -31,3 +31,8 @@ apt-get install -y git
 
 pip install pyzmq networkx hyperopt
 pip install git+https://github.com/sfalkner/pynisher git+https://github.com/sfalkner/pysmac
+
+
+# generic
+pip install -U gitpython
+
