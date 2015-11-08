@@ -34,5 +34,8 @@ pip install git+https://github.com/sfalkner/pynisher git+https://github.com/sfal
 
 
 # generic
+
 pip install -U gitpython
 
+# databoard
+pip install -r databoard_requirements.txt

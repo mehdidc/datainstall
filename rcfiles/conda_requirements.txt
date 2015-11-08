@@ -3,6 +3,7 @@ pandas>=0.16.1
 scikit-learn>=0.15.2
 scipy
 ipython
+netcdf4
 xray
 pymongo
 matplotlib
@@ -12,3 +13,5 @@ jsonschema
 pyzmq
 flask
 six
+theano
+fabric

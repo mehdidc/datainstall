@@ -7,12 +7,19 @@ install_openblas() {
 pip install -U --no-deps git+git://github.com/Theano/Theano.git
 install_openblas # for theano
 
-# nolearn + lasagne + lasagnekit
+# nolearn + lasagne + lasagnekit + keras
 pip install git+https://github.com/Lasagne/Lasagne
 pip install git+https://github.com/mehdidc/lasagnekit
 pip install nolearn
+pip install keras
 
 # easy.py lasagne (deprecated...use lasagnekit)
 #FOLDER=$(dirname $(which python))/../lib/python2.7/site-packages/lasagne
 #echo $FOLDER
 #wget https://raw.githubusercontent.com/mehdidc/Lasagne/master/lasagne/easy.py --output-document=$FOLDER/easy.py
+
+# Torch
+sudo apt-get install -y cmake libreadline-dev libzmq-dev
+curl -s https://raw.githubusercontent.com/torch/ezinstall/master/install-deps | bash
+git clone https://github.com/torch/distro.git ~/torch --recursive
+cd ~/torch; ./install.sh
