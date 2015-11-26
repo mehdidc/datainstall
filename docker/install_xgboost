@@ -1,0 +1,10 @@
+#!/bin/sh
+
+git clone https://github.com/dmlc/xgboost
+cd xgboost
+./build.sh
+cd wrapper
+python setup.py build
+python setup.py install
+cd ../..
+rm -fr xgboost
