@@ -38,10 +38,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
-
-export PATH="/mnt/datacamp/anaconda/bin:$PATH"
-export PATH=$PATH:/root/local/smac-v2.08.00-master-731
-
 alias start_screen_server="screen -S $(basename $(pwd))_server"
 alias start_screen_fetch="screen -S $(basename $(pwd))_fetch"
 alias start_screen_train="screen -S $(basename $(pwd))_train"
@@ -53,14 +49,4 @@ alias start_screen_train_="screen -m -d -S $(basename $(pwd))_train fab train le
 alias attach_screen_server_="screen -x $(basename $(pwd))_server"
 alias attach_screen_fetch_="screen -x $(basename $(pwd))_fetch fab"
 alias attach_screen_train_="screen -x $(basename $(pwd))_train fab"
-
-# I usually mount my pdisk at /mnt/ and 
-# put occasional confs in utils.sh
-# (the e is missing on purpose, to
-# prevent potential clashes)
-if [[ -e /mnt/utils.sh ]]; then 
-    source /mnt/utils.sh
-    echo "[+] utils.sh sourced."
-fi 
-
 source ~/.profile

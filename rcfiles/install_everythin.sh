@@ -1,6 +1,7 @@
 apt-get update
 apt-get dist-upgrade -y
 apt-get update
+apt-get install -y vim
 apt-get install -y git
 apt-get install -y htop
 apt-get install -y mc 
@@ -19,7 +20,7 @@ source activate databoard-env
 # zsh
 apt-get install -y zsh
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
-chsh -s /bin/zsh
+chsh root -s /bin/zsh
 
 pip install git+git://github.com/jcrudy/py-earth
 
@@ -39,3 +40,12 @@ pip install -U gitpython
 
 # databoard
 pip install -r databoard_requirements.txt
+
+#cmaes
+
+conda install boost
+conda install -c https://conda.anaconda.org/meznom boost-python
+conda config --add channels meznom
+conda install -c https://conda.anaconda.org/mehdidc cmaes
+
+pip install git+git://github.com/mehdidc/urlcache
