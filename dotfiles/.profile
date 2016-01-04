@@ -6,6 +6,6 @@ if [ "$BASH" ]; then
   fi
 fi
 
-MINCONDA=~/opt/conda
+MINICONDA=/root/miniconda2
 export PATH=$MINICONDA/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MINICONDA/lib

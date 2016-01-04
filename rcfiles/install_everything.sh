@@ -24,28 +24,28 @@ chsh root -s /bin/zsh
 
 pip install git+git://github.com/jcrudy/py-earth
 
-source install_neuralnets
-source install_xgboost
-
+pip install xgboost
 
 apt-get install -y git
 
 pip install pyzmq networkx hyperopt
 pip install git+https://github.com/sfalkner/pynisher git+https://github.com/sfalkner/pysmac
 
-
-# generic
-
 pip install -U gitpython
 
 # databoard
 pip install -r databoard_requirements.txt
 
-#cmaes
+# conda install boost
+# conda install -c https://conda.anaconda.org/meznom boost-python
+# conda config --add channels meznom
+# conda install -c https://conda.anaconda.org/mehdidc cmaes
+# pip install git+git://github.com/mehdidc/urlcache
 
-conda install boost
-conda install -c https://conda.anaconda.org/meznom boost-python
-conda config --add channels meznom
-conda install -c https://conda.anaconda.org/mehdidc cmaes
+pip install nose
+pip install scikit-neuralnetwork
+pip install supersmoother
+pip install gatspy
 
-pip install git+git://github.com/mehdidc/urlcache
+
+source install_neuralnets

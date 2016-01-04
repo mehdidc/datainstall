@@ -1,13 +1,8 @@
 #!/bin/sh
 
-install_openblas() {
-}
-
 pip install -U --no-deps git+git://github.com/Theano/Theano.git
-install_openblas # for theano
-conda install -y -c https://conda.binstar.org/jakirkham openblas
+conda install -y openblas
 
-# nolearn + lasagne + lasagnekit + keras
 pip install git+https://github.com/Lasagne/Lasagne
 pip install git+https://github.com/mehdidc/lasagnekit
 pip install nolearn
