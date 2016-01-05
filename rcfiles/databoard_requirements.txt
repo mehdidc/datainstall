@@ -13,7 +13,7 @@ Flask-SQLAlchemy>=2.1
 Flask-Wtf>=0.12
 Flask-Migrate>=1.6.0
 sqlalchemy>=1.0.9
-xkcd_password<=1.4.2
+xkcdpass<=1.4.2
 theano
 lasagne
 nolearn
