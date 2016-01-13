@@ -7,18 +7,19 @@ apt-get install -y htop
 apt-get install -y mc 
 apt-get install -y -qq libcurl4-openssl-dev build-essential 
 apt-get install -y default-jre
+apt-get install -y wget
+apt-get install -y zsh
 
 cp -f ~/dotfiles/.* ~
 # miniconda
 wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
 chmod +x Miniconda-latest-Linux-x86_64.sh 
 ./Miniconda-latest-Linux-x86_64.sh -b
-. ~/.profile
+source ~/.profile
 conda create --yes -n databoard-env python=2.7 --file conda_requirements.txt -c https://conda.binstar.org/auto -c https://conda.binstar.org/hugo
 source activate databoard-env
 
 # zsh
-apt-get install -y zsh
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 chsh root -s /bin/zsh
 
