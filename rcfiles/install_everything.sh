@@ -46,6 +46,10 @@ pip install nose
 pip install scikit-neuralnetwork
 pip install supersmoother
 pip install gatspy
-
+pip install FATS
+pip install mlxtend
+pip install statsmodels
+pip install seaborn
 
 source install_neuralnets
+
