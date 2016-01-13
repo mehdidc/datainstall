@@ -18,9 +18,9 @@ you can also do it on several machines:
 first, you need to build the Docker image (once), then you can launch it.
 
 ### building docker image:
-    
+
 > docker build -t ramp . | tee log
 
 ### launch and use an instance :
 
-> docker run -i ramp -t
+> docker run -v -t -i ramp
