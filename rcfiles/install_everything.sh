@@ -57,6 +57,7 @@ pip install FATS
 pip install mlxtend
 pip install statsmodels
 pip install seaborn
+pip install geopy
 
 source  ~/rcfiles/install_neuralnets
 
