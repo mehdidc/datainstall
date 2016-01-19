@@ -1,8 +1,8 @@
 #!/bin/bash
 
-apt-get update
+apt-get -y update
 apt-get dist-upgrade -y
-apt-get update
+apt-get -y update
 apt-get install -y apt-utils
 apt-get install -y vim
 apt-get install -y git
@@ -33,8 +33,6 @@ pip install git+git://github.com/jcrudy/py-earth
 
 pip install xgboost
 
-apt-get install -y git
-
 pip install pyzmq networkx hyperopt
 pip install git+https://github.com/sfalkner/pynisher git+https://github.com/sfalkner/pysmac
 
@@ -58,6 +56,7 @@ pip install mlxtend
 pip install statsmodels
 pip install seaborn
 pip install geopy
+pip install holidays
 
 source  ~/rcfiles/install_neuralnets
 
