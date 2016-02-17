@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt-get -y update
-apt-get dist-upgrade -y
+apt-get -y dist-upgrade
 apt-get -y update
 apt-get install -y apt-utils
 apt-get install -y vim
@@ -41,12 +41,6 @@ pip install -U gitpython
 # databoard
 pip install -r databoard_requirements.txt
 
-# conda install boost
-# conda install -c https://conda.anaconda.org/meznom boost-python
-# conda config --add channels meznom
-# conda install -c https://conda.anaconda.org/mehdidc cmaes
-# pip install git+git://github.com/mehdidc/urlcache
-
 pip install nose
 pip install scikit-neuralnetwork
 pip install supersmoother
@@ -59,4 +53,3 @@ pip install geopy
 pip install holidays
 
 source  ~/rcfiles/install_neuralnets
-
