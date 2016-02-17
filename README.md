@@ -1,17 +1,18 @@
-The purpose of this is to bootstrap/create a machine so that it is ready-to-use for RAMPs.
+The purpose of datainstall is to bootstrap/create a machine so that it is ready-to-use for RAMPs.
 Currently, there are two ways to bootstrap a machine, either directly by ssh to a machine 
 (e.g onevm) or using Docker. For the ssh case, you need root (admin).
+Note that datainstall currently work only on debian based systems.
 
 ## With ssh
 
 just type :
 
-> ./launch.sh onevm-xxx.lal.in2p3.fr
+> ./install.sh onevm-xxx.lal.in2p3.fr
 
 you can also do it on several machines:
 
 
-> ./launch.sh onevm-xxx.lal.in2p3.fr onevm-yyy.lal.in2p3.fr....
+> ./install.sh onevm-xxx.lal.in2p3.fr onevm-yyy.lal.in2p3.fr....
 
 ##  With Docker
 
