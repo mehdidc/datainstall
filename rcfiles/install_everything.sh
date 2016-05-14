@@ -1,19 +1,19 @@
 #!/bin/bash
 
-apt-get -y update
-apt-get -y dist-upgrade
-apt-get -y update
-apt-get install -y apt-utils
-apt-get install -y vim
-apt-get install -y git
-apt-get install -y htop
-apt-get install -y mc 
-apt-get install -y -qq libcurl4-openssl-dev build-essential 
-apt-get install -y default-jre
-apt-get install -y wget
-apt-get install -y zsh
-apt-get install -y cmake
-apt-get install -y libreadline-dev
+sudo apt-get -y update
+sudo apt-get -y dist-upgrade
+sudo apt-get -y update
+sudo apt-get install -y apt-utils
+sudo apt-get install -y vim
+sudo apt-get install -y git
+sudo apt-get install -y htop
+sudo apt-get install -y mc 
+sudo apt-get install -y -qq libcurl4-openssl-dev build-essential 
+sudo apt-get install -y default-jre
+sudo apt-get install -y wget
+sudo apt-get install -y zsh
+sudo apt-get install -y cmake
+sudo apt-get install -y libreadline-dev
 
 cp -f ~/dotfiles/.* ~
 # miniconda
@@ -26,7 +26,7 @@ source activate databoard-env
 
 # zsh
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
-chsh root -s /bin/zsh
+chsh $USER -s /bin/zsh
 cp -f ~/dotfiles/.zshrc ~
 
 pip install git+git://github.com/jcrudy/py-earth

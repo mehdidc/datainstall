@@ -6,7 +6,7 @@ if [ "$BASH" ]; then
   fi
 fi
 
-MINICONDA=/root/miniconda2
+MINICONDA=$HOME/miniconda2
 export PATH=$MINICONDA/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MINICONDA/lib
 source activate databoard-env

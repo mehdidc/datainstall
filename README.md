@@ -11,7 +11,7 @@ type :
 
 you can also do it on several machines:
 
-> ./install.sh onevm-xxx.lal.in2p3.fr onevm-yyy.lal.in2p3.fr....
+> ./install.sh root@onevm-xxx.lal.in2p3.fr root@onevm-yyy.lal.in2p3.fr....
 
 ##  With Docker
 
@@ -28,3 +28,4 @@ first, you need to build the Docker image (once), then you can launch it.
 ### Launch Jupyter
 
 > docker run -p 8080:8080 -t -i ramp bash -c "source ~/.profile;jupyter notebook --ip=0.0.0.0 --port=8080"
+
