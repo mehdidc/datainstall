@@ -29,7 +29,7 @@ wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 chsh $USER -s /bin/zsh
 cp -f ~/dotfiles/.zshrc ~
 
-pip install git+git://github.com/jcrudy/py-earth
+pip install git+git://github.com/scikit-learn-contrib/py-earth 
 
 pip install xgboost
 
