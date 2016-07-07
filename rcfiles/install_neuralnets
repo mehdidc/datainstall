@@ -5,7 +5,7 @@ conda install -y openblas
 
 pip install git+https://github.com/Lasagne/Lasagne
 pip install git+https://github.com/mehdidc/lasagnekit
-pip install nolearn
+pip install git+https://github.com/dnouri/nolearn.git@master#egg=nolearn==0.7.git
 pip install git+https://github.com/fchollet/keras
 
 # tensorflow
